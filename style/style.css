@@ -1,5 +1,5 @@
-.body {
-    font-family: arial;
+body {
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
 }
@@ -10,15 +10,29 @@
     margin: auto;
 }
 
-.header {
+header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 0;
+    padding: 30px 0;
+}
+.div-logo {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #ff6600;
+}
+/*navbar*/
+nav a {
+    margin-left: 40px;
+    text-decoration: none;
+    color: #000;
+    font-weight: 700;
+    font-size: 1rem;
+    position: relative;
 }
 
-/*hero section */
-.heroflower{
+/* Hero section */
+.heroflower {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -26,8 +40,42 @@
     flex-wrap: wrap;
 }
 
-.hero-text-flower{
-    max-width: 50px;
+.hero-text-flower {
+    max-width: 50%;
+    padding-right: 20px;
 }
 
+.hero-text-flower h1 {
+    font-size: 48px;
+    color: #000;
+    line-height: 1.2;
+}
+
+.hero-text-flower p {
+    margin-top: 20px;
+    font-size: 16px;
+    color: #555;
+}
+
+.highlight {
+    color: #ff6600;
+    font-weight: bold;
+}
+
+.highlight-orange {
+    color: #ff6600;
+    font-weight: bold;
+}
+
+.hero-image-flower {
+    flex: 1;
+    text-align: center;
+}
+
+.hero-image-flower img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    border-radius: 10px;
+}
 
