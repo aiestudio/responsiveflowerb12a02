@@ -1,27 +1,33 @@
+/* BODY */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
 }
 
+/* Main container centered */
 .container {
     width: 90%;
     max-width: 1150px;
     margin: auto;
 }
 
+/* Header section with logo and navbar */
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 30px 0;
 }
+
+/* Logo style */
 .div-logo {
     font-size: 2rem;
     font-weight: 700;
     color: #ff6600;
 }
-/*navbar*/
+
+/* Navbar links */
 nav a {
     margin-left: 40px;
     text-decoration: none;
@@ -40,6 +46,7 @@ nav a {
     flex-wrap: wrap;
 }
 
+/* Left side text of hero */
 .hero-text-flower {
     max-width: 50%;
     padding-right: 20px;
@@ -57,6 +64,7 @@ nav a {
     color: #555;
 }
 
+/* Highlight ORANGE styles */
 .highlight {
     color: #ff6600;
     font-weight: bold;
@@ -67,6 +75,7 @@ nav a {
     font-weight: bold;
 }
 
+/* Right side image of hero */
 .hero-image-flower {
     flex: 1;
     text-align: center;
@@ -79,9 +88,77 @@ nav a {
     border-radius: 10px;
 }
 
-/*plants section */
-
+/* Plants section title and description */
 .Plants {
     text-align: center;
     padding: 40px 0;
+    width: 100%;
+}
+
+.Plants h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.Plants p {
+    max-width: 650px;
+    margin: 0 auto 35px;
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.5;
+}
+
+/* Grid  for plant cards */
+.div-plant-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /*  4 cards per row  ??*/
+    gap: 30px;
+    width: 100%;
+    max-width: 1150px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+/* Single plant card container */
+.div-plant-grid > div {
+    background-color: #fff;
+    padding: 20px;
+    text-align: center;
+    border: 1px solid #eee;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+/* Product image */
+.div-plant-grid img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+/* Product name */
+.div-plant-grid h3 {
+    margin-top: 10px;
+    font-size: 1.1rem;
+}
+
+/* Product price */
+.div-plant-grid p {
+    font-weight: bold;
+    margin: 5px 0 15px;
+}
+
+/* Add to Cart button */
+.div-plant-grid button {
+    background-color: #ff6600;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    width: 100%;
+    transition: background 0.3s;
+}
+
+.div-plant-grid button:hover {
+    background-color: #e65c00;
 }
