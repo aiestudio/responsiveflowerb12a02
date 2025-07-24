@@ -1,18 +1,17 @@
-/* BODY */
+/* Body Style */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
 }
 
-/* Main container centered */
 .container {
     width: 90%;
     max-width: 1150px;
     margin: auto;
 }
 
-/* Header section with logo and navbar */
+/* Header: logo and nav */
 header {
     display: flex;
     justify-content: space-between;
@@ -20,14 +19,13 @@ header {
     padding: 30px 0;
 }
 
-/* Logo style */
 .div-logo {
     font-size: 2rem;
     font-weight: 700;
     color: #ff6600;
 }
 
-/* Navbar links */
+/* Navigation links */
 nav a {
     margin-left: 40px;
     text-decoration: none;
@@ -46,7 +44,6 @@ nav a {
     flex-wrap: wrap;
 }
 
-/* Left side text of hero */
 .hero-text-flower {
     max-width: 50%;
     padding-right: 20px;
@@ -64,18 +61,12 @@ nav a {
     color: #555;
 }
 
-/* Highlight ORANGE styles */
-.highlight {
-    color: #ff6600;
-    font-weight: bold;
-}
-
+.highlight,
 .highlight-orange {
     color: #ff6600;
     font-weight: bold;
 }
 
-/* Right side image of hero */
 .hero-image-flower {
     flex: 1;
     text-align: center;
@@ -88,11 +79,10 @@ nav a {
     border-radius: 10px;
 }
 
-/* Plants section title and description */
+/* Plants section */
 .Plants {
     text-align: center;
     padding: 40px 0;
-    width: 100%;
 }
 
 .Plants h2 {
@@ -101,64 +91,108 @@ nav a {
 }
 
 .Plants p {
-    max-width: 650px;
+    max-width: 600px;
     margin: 0 auto 35px;
     font-size: 1rem;
     color: #555;
-    line-height: 1.5;
 }
 
-/* Grid  for plant cards */
+/* Grid wrapper for all cards */
 .div-plant-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr); /*  4 cards per row  ??*/
+    grid-template-columns: repeat(4, 1fr); /*  4 cards per row */
     gap: 30px;
     width: 100%;
     max-width: 1150px;
     margin: 0 auto;
-    padding: 0 10px;
-}
-/* Single plant card container */
-.div-plant-grid > div {
-    background-color: #fff;
-    padding: 20px;
-    text-align: center;
-    border: 1px solid #eee;
-    border-radius: 10px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
 }
 
-/* Product image */
-.div-plant-grid img {
+/* Single card style */
+.plant-card {
+    text-align: center;
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.plant-card img {
     width: 100%;
+    height: auto;
     border-radius: 8px;
 }
 
-/* Product name */
-.div-plant-grid h3 {
-    margin-top: 10px;
+.plant-card h3 {
+    margin: 10px 0 5px;
     font-size: 1.1rem;
+    color: #333;
 }
 
-/* Product price */
-.div-plant-grid p {
+.plant-card p {
     font-weight: bold;
-    margin: 5px 0 15px;
+    color: #000;
+    margin-bottom: 10px;
 }
 
-/* Add to Cart button */
-.div-plant-grid button {
+.plant-card button {
     background-color: #ff6600;
-    color: white;
+    color: #fff;
     border: none;
-    padding: 10px;
-    border-radius: 5px;
+    padding: 10px 15px;
     font-weight: bold;
     cursor: pointer;
-    width: 100%;
-    transition: background 0.3s;
+    border-radius: 5px;
 }
 
-.div-plant-grid button:hover {
-    background-color: #e65c00;
+/*featurebadge*/
+
+
+.feature {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  padding: 60px 0;
+}
+
+/* Left column: image and badge */
+.feature-image {
+  position: relative;
+  width: 50%;
+}
+
+/* Main image */
+.feature-image img:first-child {
+  width: 100%;
+  border-radius: 10px;
+}
+
+/* Badge image */
+.feature-image .badge {
+  position: absolute;
+  top: -40px;        /* Push upward above image to make between*/
+  left: 80%;         /* left right on top of the impage */
+  transform: translateX(-50%);
+  width: 100px;
+  height: auto;
+  z-index: 3;
+}
+
+/* Right column: text */
+.feature-text {
+  width: 50%;
+}
+
+.feature-text h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.feature-text ul {
+  padding-left: 20px;
+}
+
+.feature-text li {
+  margin-bottom: 10px;
+  color: #444;
+  line-height: 1.5;
 }
